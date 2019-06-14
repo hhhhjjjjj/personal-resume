@@ -1,0 +1,350 @@
+
+.layout{
+	max-width: 1200px;
+	margin:0 auto;
+}
+#header{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 70px;
+	box-shadow: 60px 50px 100px #c2c2c2;
+	background: #fff;
+}
+.hdContent{
+	padding: 0 20px;
+}
+.logo{
+	font-size: 30px;
+	color: #d7b065;
+	height: 70px;
+	line-height: 70px;
+}
+
+.navBtn{
+	display: none;
+	position: relative;
+	top:20px;
+	/*right: 20px;*/
+	width: 24px;
+	height: 24px;
+	background: url(../images/drop_menu.jpg.jpg) no-repeat center center;
+
+}
+
+.hdNav{
+	width: 345px;
+	height: 70px;
+	line-height: 70px;
+	/*display: none;*/
+}
+.hdNav li{
+	float: left;
+	margin-right: 40px;
+	font-size: 16px;
+}
+.hdNav li:last-child{
+	margin-right: 0;
+}
+.hdNav li a{
+	display: block;
+	height: 70px;
+	position: relative;
+}
+.hdNav li.active a{
+	color: #d7b065;
+}
+.hdNav li.active a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	height: 3px;
+	background: #d7b065;
+}
+.hdNav li a span,.hdNav li a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width: 0;
+	height: 3px;
+	background: #d7b065;
+	transition: 0.3s;
+}
+.hdNav li a:hover span,.hdNav li:hover a:after{
+	width: 100%;
+}
+
+
+.section{
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 75px;
+}
+.section:last-of-type{
+	border:none;
+}
+#section1{
+	text-align: center;
+	margin-top: 150px;
+}
+/*
+第一部分 个人联系方式
+ */
+.avatar{
+	max-width: 160px;
+}
+.avatar img{
+	width: 100%;
+	border-radius: 50%;
+}
+.myname{
+	margin-top: 20px;
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 1.2;
+	/*
+	响应式尽量用相对的单位设置行高。
+	 */
+}
+.myInfo{
+	margin-top: 30px;
+	font-size: 20px;
+	line-height: 2;
+}
+
+
+/*
+公共头
+ */
+.publicHd{
+	text-align: center;
+	padding: 75px 0;
+}
+.publicHd h2{
+	font-size: 34px;
+	color: #575757;
+}
+.publicHd h2:after{
+	content: '';
+	display: block;
+	width: 100px;
+	height: 5px;
+	margin: 16px auto 20px auto;
+	background: #d7b065;
+}
+.publicHd p{
+	/*margin-top: 20px;*/
+	font-size: 16px;
+	color: #969696;
+}
+
+/*
+第二部分 专业技能
+ */
+
+.zyjn{
+
+	display: flex;
+	justify-content: space-around;
+}
+.zyjn dl{
+	margin-right: 60px;
+	width: 33.33%;
+}
+.zyjn dl:last-child{
+	margin-right: 0;
+}
+.zyjn dl dt{
+	text-align: center;
+}
+.zyjn dl dd:nth-of-type(1){
+	text-align: center;
+	padding: 30px 0 15px 0;
+	font-size: 18px;
+}
+.zyjn dl dd:nth-of-type(2){
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/*
+第三部分 个人履历
+ */
+.grll dl{
+	margin-bottom: 35px;
+}
+.grll dl:last-child{
+	margin-bottom: 0;
+}
+
+.grll dt{
+	float: left;
+	width: 20%;
+	height: 36px;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height:2;
+	padding-left: 21px;
+	border-left: 6px solid #d7b065;
+
+}
+
+.grll dd{
+	margin-left: 20%;
+}
+.grll dd h3{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 2;
+}
+.grll dd p:nth-of-type(1){
+	padding: 10px 0 30px 0;
+	font-size: 14px;
+	color: #575757;
+}
+.grll dd p:nth-of-type(2){
+	font-size: 16px;
+	line-height: 2;
+	color: #575757;
+}
+
+/*
+第4部分 作品展示
+ */
+.zuopin {
+	display: flex;
+}
+.zuopin dl{
+	/*float: left;*/
+	margin-right: 30px;
+	width: 25%;
+	text-align: center;
+}
+.zuopin dl:last-child{
+	margin-right: 0;
+}
+.zuopin dl img{
+	width: 100%;
+}
+.zuopin dd{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #575757;
+}
+
+
+/*
+第5部分 联系我
+ */
+
+.contact{
+	text-align: center;
+}
+.contact p:first-child{
+	font-size: 16px;
+	line-height: 2.5;
+}
+.contact p img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.contact p:last-child{
+	margin-top: 50px;
+	color:#d7b065;
+	font-size: 25px;
+	line-height: 2;
+}
+
+/*----------以上是布局样式-----------*/
+
+@keyframes menuAni{
+	0%{
+		left: -50px;
+	}
+	100%{
+		left:0;
+	}
+}
+
+
+
+
+
+/*---------------以上是动画-------------------*/
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+	/*
+	中屏及平板的时候写这里
+	 */
+	body{
+		min-width: 320px;
+	}
+	.zyjn{
+		display: block;
+		padding: 0 20px;
+	}
+	.zyjn dl{
+		width: 100%;
+		margin:0;
+	}
+
+	.grll dd{
+		margin-left: 28%;
+	}
+	.zuopin{
+		flex-wrap:wrap;
+		/* 换行 */
+		justify-content: space-around;
+	}
+	.zuopin dl{
+		width: 45%;
+		margin:0;
+
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	/*
+	小屏 手机
+	 */
+	.publicHd h2{
+		font-size: 28px;
+	}
+	.hdNav{
+		display: none;
+	}
+	.navBtn{
+		display: block;
+		animation: menuAni 0.2s;
+	}
+	.myname{
+		font-size: 24px;
+	}
+	.myInfo{
+		margin-top: 20px;
+		font-size: 18px;
+	}
+
+	.grll{
+		padding: 0 20px;
+	}
+	.grll dt{
+		width: 100%;
+	}
+	.grll dd{
+		margin:0;
+	}
+}
+
+

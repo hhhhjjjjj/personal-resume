@@ -1,0 +1,26 @@
+body{margin:0;font:12px/1 "微软雅黑"; color: #333}
+h1,h2,h3,h4,h5,h6{margin:0;font-size:12px; font-weight:normal;}
+/*h2{margin:0;} h3{margin:0;} h4{margin:0;} h5{margin:0;} h6{margin:0;}*/
+ul,ol{list-style:none;margin:0;padding:0;}
+p,dl,dd{margin:0;}
+a{text-decoration:none;color:#333;}
+a:hover{color:#d7b065;}
+/* #333 是网页当中常用的一种灰色 */
+img{border:none;vertical-align:bottom;}
+/* ie下图片如果加了超链接，则图片会加一个蓝色边框 */
+strong,b{font-weight:normal;}
+em,i{ font-style:normal;}
+
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0;}
+.clearfix{zoom:1;}
+
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.mauto{
+	margin: 0 auto;
+}
